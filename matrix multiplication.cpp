@@ -6,7 +6,7 @@ int main()
     scanf("%d", &rows);
     printf("Enter the number of columns: ");
     scanf("%d", &columns);
-    int firstMatrix[rows][columns], secondMatrix[rows][columns], sumMatrix[rows][columns];
+    int firstMatrix[rows][columns], secondMatrix[rows][columns], mulMatrix[rows][columns];
     printf("\nEnter the elements of the first matrix:\n");
     for (i = 0; i < rows; i++) 
 	{
@@ -28,15 +28,15 @@ int main()
 	{
         for (j = 0; j < columns; j++) 
 		{
-            sumMatrix[i][j] = firstMatrix[i][j] * secondMatrix[i][j];
+            mulMatrix[i][j] = firstMatrix[i][j] * secondMatrix[i][j];
         }
     }
-    printf("\nSum of the matrices:\n");
+    printf("\nmul of the matrices:\n");
     for (i = 0; i < rows; i++) 
 	{
         for (j = 0; j < columns; j++) 
 		{
-            printf("%d ", sumMatrix[i][j]);
+            printf("%d ", mulMatrix[i][j]);
         }
         printf("\n");
     }
